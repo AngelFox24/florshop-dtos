@@ -18,4 +18,42 @@ public struct CustomerServerDTO: Sendable, Codable {
     public let creditLimit: Int
     public let companyID: UUID
     public let imageUrl: ImageURLServerDTO?
+    
+    public init(
+        id: UUID?,
+        name: String,
+        lastName: String,
+        totalDebt: Int,
+        creditScore: Int,
+        creditDays: Int,
+        isCreditLimitActive: Bool,
+        isCreditLimit: Bool,
+        isDateLimitActive: Bool,
+        isDateLimit: Bool,
+        dateLimit: Date,
+        firstDatePurchaseWithCredit: Date? = nil,
+        lastDatePurchase: Date,
+        phoneNumber: String,
+        creditLimit: Int,
+        companyID: UUID,
+        imageUrl: ImageURLServerDTO?
+    ) {
+        self.id = id
+        self.name = name
+        self.lastName = lastName
+        self.totalDebt = totalDebt
+        self.creditScore = creditScore
+        self.creditDays = creditDays
+        self.isCreditLimitActive = isCreditLimitActive
+        self.isCreditLimit = isCreditLimit
+        self.isDateLimitActive = isDateLimitActive
+        self.isDateLimit = isDateLimit
+        self.dateLimit = dateLimit
+        self.firstDatePurchaseWithCredit = firstDatePurchaseWithCredit
+        self.lastDatePurchase = lastDatePurchase
+        self.phoneNumber = phoneNumber
+        self.creditLimit = creditLimit
+        self.companyID = companyID
+        self.imageUrl = imageUrl
+    }
 }
