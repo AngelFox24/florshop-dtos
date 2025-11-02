@@ -8,17 +8,17 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "FlorShop_DTOs",
-            targets: ["FlorShop_DTOs"]),
+            name: "FlorShopDTOs",
+            targets: ["FlorShopDTOs"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "FlorShop_DTOs"),
+            name: "FlorShopDTOs"),
         .testTarget(
-            name: "FlorShop_DTOsTests",
-            dependencies: ["FlorShop_DTOs"]
+            name: "FlorShopDTOsTests",
+            dependencies: ["FlorShopDTOs"]
         ),
     ]
 )
