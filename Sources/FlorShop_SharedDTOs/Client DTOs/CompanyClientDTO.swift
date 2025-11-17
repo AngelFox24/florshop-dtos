@@ -1,7 +1,7 @@
 import Foundation
 
 public struct CompanyClientDTO: Sendable, Codable {
-    public let id: UUID
+    public let companyCic: String
     public let companyName: String
     public let ruc: String
     public let syncToken: Int64
@@ -9,14 +9,14 @@ public struct CompanyClientDTO: Sendable, Codable {
     public let updatedAt: Date
     
     public init(
-        id: UUID,
+        companyCic: String,
         companyName: String,
         ruc: String,
         syncToken: Int64,
         createdAt: Date,
         updatedAt: Date
     ) {
-        self.id = id
+        self.companyCic = companyCic
         self.companyName = companyName
         self.ruc = ruc
         self.syncToken = syncToken

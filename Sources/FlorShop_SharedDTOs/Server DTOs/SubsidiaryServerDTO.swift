@@ -1,16 +1,16 @@
 import Foundation
 
 public struct SubsidiaryServerDTO: Sendable, Codable {
-    public let id: UUID?
+    public let subsidiaryCic: String?
     public let name: String
-    public let imageUrl: ImageURLServerDTO?
+    public let imageUrl: String?
     
     public init(
-        id: UUID?,
+        subsidiaryCic: String?,
         name: String,
-        imageUrl: ImageURLServerDTO?
+        imageUrl: String?
     ) {
-        self.id = id
+        self.subsidiaryCic = subsidiaryCic
         self.name = name
         self.imageUrl = imageUrl
     }

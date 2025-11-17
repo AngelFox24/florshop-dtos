@@ -1,7 +1,7 @@
 import Foundation
 
 public struct ProductServerDTO: Sendable, Codable {
-    public let id: UUID?
+    public let productCic: String?
     public let productName: String
     public let barCode: String
     public let active: Bool
@@ -10,11 +10,10 @@ public struct ProductServerDTO: Sendable, Codable {
     public let unitType: String
     public let unitCost: Int
     public let unitPrice: Int
-    public let subsidiaryId: UUID
-    public let imageUrl: ImageURLServerDTO?
+    public let imageUrl: String?
     
     public init(
-        id: UUID?,
+        productCic: String?,
         productName: String,
         barCode: String,
         active: Bool,
@@ -23,10 +22,9 @@ public struct ProductServerDTO: Sendable, Codable {
         unitType: String,
         unitCost: Int,
         unitPrice: Int,
-        subsidiaryId: UUID,
-        imageUrl: ImageURLServerDTO?
+        imageUrl: String?
     ) {
-        self.id = id
+        self.productCic = productCic
         self.productName = productName
         self.barCode = barCode
         self.active = active
@@ -35,7 +33,6 @@ public struct ProductServerDTO: Sendable, Codable {
         self.unitType = unitType
         self.unitCost = unitCost
         self.unitPrice = unitPrice
-        self.subsidiaryId = subsidiaryId
         self.imageUrl = imageUrl
     }
 }

@@ -1,30 +1,28 @@
 import Foundation
 
 public struct EmployeeServerDTO: Sendable, Codable {
-    public let id: UUID?
+    public let employeeCic: String?
     public let user: String
     public let name: String
     public let lastName: String
     public let email: String
     public let phoneNumber: String
-    public let role: String
+    public let role: UserSubsidiaryRole
     public let active: Bool
-    public let subsidiaryID: UUID
-    public let imageUrl: ImageURLServerDTO?
+    public let imageUrl: String?
     
     public init(
-        id: UUID?,
+        employeeCic: String?,
         user: String,
         name: String,
         lastName: String,
         email: String,
         phoneNumber: String,
-        role: String,
+        role: UserSubsidiaryRole,
         active: Bool,
-        subsidiaryID: UUID,
-        imageUrl: ImageURLServerDTO?
+        imageUrl: String?
     ) {
-        self.id = id
+        self.employeeCic = employeeCic
         self.user = user
         self.name = name
         self.lastName = lastName
@@ -32,7 +30,6 @@ public struct EmployeeServerDTO: Sendable, Codable {
         self.phoneNumber = phoneNumber
         self.role = role
         self.active = active
-        self.subsidiaryID = subsidiaryID
         self.imageUrl = imageUrl
     }
 }

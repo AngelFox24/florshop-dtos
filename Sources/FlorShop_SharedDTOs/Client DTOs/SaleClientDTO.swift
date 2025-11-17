@@ -6,9 +6,9 @@ public struct SaleClientDTO: Sendable, Codable {
     public let saleDate: Date
     public let total: Int
     public let syncToken: Int64
-    public let subsidiaryId: UUID
-    public let customerId: UUID?
-    public let employeeId: UUID
+    public let subsidiaryCic: String
+    public let customerCic: String?
+    public let employeeCic: String
     public let saleDetail: [SaleDetailClientDTO]
     public let createdAt: Date
     public let updatedAt: Date
@@ -19,9 +19,9 @@ public struct SaleClientDTO: Sendable, Codable {
         saleDate: Date,
         total: Int,
         syncToken: Int64,
-        subsidiaryId: UUID,
-        customerId: UUID?,
-        employeeId: UUID,
+        subsidiaryCic: String,
+        customerCic: String?,
+        employeeCic: String,
         saleDetail: [SaleDetailClientDTO],
         createdAt: Date,
         updatedAt: Date
@@ -31,9 +31,9 @@ public struct SaleClientDTO: Sendable, Codable {
         self.saleDate = saleDate
         self.total = total
         self.syncToken = syncToken
-        self.subsidiaryId = subsidiaryId
-        self.customerId = customerId
-        self.employeeId = employeeId
+        self.subsidiaryCic = subsidiaryCic
+        self.customerCic = customerCic
+        self.employeeCic = employeeCic
         self.saleDetail = saleDetail
         self.createdAt = createdAt
         self.updatedAt = updatedAt

@@ -1,18 +1,18 @@
 import Foundation
 
 public struct ImageURLServerDTO: Sendable, Codable {
-    public let id: UUID?
+    public let imageCic: String?
     public let imageUrl: String?
     public let imageHash: String
     public let imageData: Data?
     
     public init(
-        id: UUID?,
+        imageCic: String?,
         imageUrl: String?,
         imageHash: String,
         imageData: Data?
     ) {
-        self.id = id
+        self.imageCic = imageCic
         self.imageUrl = imageUrl
         self.imageHash = imageHash
         self.imageData = imageData

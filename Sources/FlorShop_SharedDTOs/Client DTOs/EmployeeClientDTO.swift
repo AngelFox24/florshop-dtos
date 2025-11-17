@@ -1,36 +1,36 @@
 import Foundation
 
 public struct EmployeeClientDTO: Sendable, Codable {
-    public let id: UUID
+    public let employeeCic: String
     public let user: String
     public let name: String
     public let lastName: String
     public let email: String
     public let phoneNumber: String
-    public let role: String
+    public let role: UserSubsidiaryRole
     public let active: Bool
     public let syncToken: Int64
-    public let subsidiaryID: UUID
-    public let imageUrlId: UUID?
+    public let subsidiaryCic: String
+    public let imageUrl: String?
     public let createdAt: Date
     public let updatedAt: Date
     
     public init(
-        id: UUID,
+        employeeCic: String,
         user: String,
         name: String,
         lastName: String,
         email: String,
         phoneNumber: String,
-        role: String,
+        role: UserSubsidiaryRole,
         active: Bool,
         syncToken: Int64,
-        subsidiaryID: UUID,
-        imageUrlId: UUID?,
+        subsidiaryCic: String,
+        imageUrl: String?,
         createdAt: Date,
         updatedAt: Date
     ) {
-        self.id = id
+        self.employeeCic = employeeCic
         self.user = user
         self.name = name
         self.lastName = lastName
@@ -39,8 +39,8 @@ public struct EmployeeClientDTO: Sendable, Codable {
         self.role = role
         self.active = active
         self.syncToken = syncToken
-        self.subsidiaryID = subsidiaryID
-        self.imageUrlId = imageUrlId
+        self.subsidiaryCic = subsidiaryCic
+        self.imageUrl = imageUrl
         self.createdAt = createdAt
         self.updatedAt = updatedAt
     }

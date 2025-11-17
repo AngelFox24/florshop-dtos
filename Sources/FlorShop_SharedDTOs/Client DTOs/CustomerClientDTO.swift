@@ -1,7 +1,7 @@
 import Foundation
 
 public struct CustomerClientDTO: Sendable, Codable {
-    public let id: UUID
+    public let customerCic: String
     public let name: String
     public let lastName: String
     public let totalDebt: Int
@@ -17,13 +17,13 @@ public struct CustomerClientDTO: Sendable, Codable {
     public let phoneNumber: String
     public let creditLimit: Int
     public let syncToken: Int64
-    public let companyID: UUID
-    public let imageUrlId: UUID?
+    public let companyCic: String
+    public let imageUrl: String?
     public let createdAt: Date
     public let updatedAt: Date
     
     public init(
-        id: UUID,
+        customerCic: String,
         name: String,
         lastName: String,
         totalDebt: Int,
@@ -39,12 +39,12 @@ public struct CustomerClientDTO: Sendable, Codable {
         phoneNumber: String,
         creditLimit: Int,
         syncToken: Int64,
-        companyID: UUID,
-        imageUrlId: UUID?,
+        companyCic: String,
+        imageUrl: String?,
         createdAt: Date,
         updatedAt: Date
     ) {
-        self.id = id
+        self.customerCic = customerCic
         self.name = name
         self.lastName = lastName
         self.totalDebt = totalDebt
@@ -60,8 +60,8 @@ public struct CustomerClientDTO: Sendable, Codable {
         self.phoneNumber = phoneNumber
         self.creditLimit = creditLimit
         self.syncToken = syncToken
-        self.companyID = companyID
-        self.imageUrlId = imageUrlId
+        self.companyCic = companyCic
+        self.imageUrl = imageUrl
         self.createdAt = createdAt
         self.updatedAt = updatedAt
     }
