@@ -2,7 +2,7 @@ import Foundation
 
 public struct SaleClientDTO: Sendable, Codable {
     public let id: UUID
-    public let paymentType: String
+    public let paymentType: PaymentType
     public let saleDate: Date
     public let total: Int
     public let syncToken: Int64
@@ -15,7 +15,7 @@ public struct SaleClientDTO: Sendable, Codable {
     
     public init(
         id: UUID,
-        paymentType: String,
+        paymentType: PaymentType,
         saleDate: Date,
         total: Int,
         syncToken: Int64,

@@ -1,0 +1,42 @@
+public struct SyncResponse: Sendable, Codable {
+    public let company: CompanyClientDTO?
+    public let subsidiaries: [SubsidiaryClientDTO]
+    public let employees: [EmployeeClientDTO]
+    public let customers: [CustomerClientDTO]
+    public let products: [ProductClientDTO]
+    public let productsSubsidiary: [ProductSubsidiaryClientDTO]
+    public let sales: [SaleClientDTO]
+    public let salesDetail: [SaleDetailClientDTO]
+    public let lastGlobalToken: Int64
+    public let isGlobalUpToDate: Bool
+    public let lastBranchToken: Int64
+    public let isBranchUpToDate: Bool
+    
+    public init(
+        company: CompanyClientDTO?,
+        subsidiaries: [SubsidiaryClientDTO],
+        employees: [EmployeeClientDTO],
+        customers: [CustomerClientDTO],
+        products: [ProductClientDTO],
+        productsSubsidiary: [ProductSubsidiaryClientDTO],
+        sales: [SaleClientDTO],
+        salesDetail: [SaleDetailClientDTO],
+        lastGlobalToken: Int64,
+        isGlobalUpToDate: Bool,
+        lastBranchToken: Int64,
+        isBranchUpToDate: Bool
+    ) {
+        self.company = company
+        self.subsidiaries = subsidiaries
+        self.employees = employees
+        self.customers = customers
+        self.products = products
+        self.productsSubsidiary = productsSubsidiary
+        self.sales = sales
+        self.salesDetail = salesDetail
+        self.lastGlobalToken = lastGlobalToken
+        self.isGlobalUpToDate = isGlobalUpToDate
+        self.lastBranchToken = lastBranchToken
+        self.isBranchUpToDate = isBranchUpToDate
+    }
+}
