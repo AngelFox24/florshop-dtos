@@ -1,7 +1,7 @@
 import Foundation
 
 public struct ProductServerDTO: Sendable, Codable {
-    public let productCic: String?
+    public let productCic: String? //Enviar un valor en productCic tiene la intencion de actualizar, de lo contrario si es nulo se crea.
     public let productName: String
     public let barCode: String
     public let active: Bool

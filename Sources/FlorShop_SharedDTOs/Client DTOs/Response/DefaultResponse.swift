@@ -9,4 +9,8 @@ public struct DefaultResponse: Sendable, Codable {
         self.code = code
         self.message = message
     }
+    
+    public func isValid() -> Bool {
+        200..<300 ~= code
+    }
 }
