@@ -2,6 +2,7 @@ public struct SyncResponse: Sendable, Codable {
     public let company: CompanyClientDTO?
     public let subsidiaries: [SubsidiaryClientDTO]
     public let employees: [EmployeeClientDTO]
+    public let employeesSubsidiary: [EmployeeSubsidiaryClientDTO]
     public let customers: [CustomerClientDTO]
     public let products: [ProductClientDTO]
     public let productsSubsidiary: [ProductSubsidiaryClientDTO]
@@ -16,6 +17,7 @@ public struct SyncResponse: Sendable, Codable {
         company: CompanyClientDTO?,
         subsidiaries: [SubsidiaryClientDTO],
         employees: [EmployeeClientDTO],
+        employeesSubsidiary: [EmployeeSubsidiaryClientDTO],
         customers: [CustomerClientDTO],
         products: [ProductClientDTO],
         productsSubsidiary: [ProductSubsidiaryClientDTO],
@@ -29,6 +31,7 @@ public struct SyncResponse: Sendable, Codable {
         self.company = company
         self.subsidiaries = subsidiaries
         self.employees = employees
+        self.employeesSubsidiary = employeesSubsidiary
         self.customers = customers
         self.products = products
         self.productsSubsidiary = productsSubsidiary

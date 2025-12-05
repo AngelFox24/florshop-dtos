@@ -1,6 +1,7 @@
 import Foundation
 
 public struct EmployeeServerDTO: Sendable, Codable {
+    public let employeeCic: String?
     public let user: String
     public let name: String
     public let lastName: String
@@ -11,6 +12,7 @@ public struct EmployeeServerDTO: Sendable, Codable {
     public let imageUrl: String?
     
     public init(
+        employeeCic: String?,
         user: String,
         name: String,
         lastName: String,
@@ -20,6 +22,7 @@ public struct EmployeeServerDTO: Sendable, Codable {
         active: Bool,
         imageUrl: String?
     ) {
+        self.employeeCic = employeeCic
         self.user = user
         self.name = name
         self.lastName = lastName
