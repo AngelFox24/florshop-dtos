@@ -7,7 +7,7 @@ public struct ProductServerDTO: Sendable, Codable {
     public let active: Bool
     public let expirationDate: Date?
     public let quantityStock: Int
-    public let unitType: String
+    public let unitType: UnitType
     public let unitCost: Int
     public let unitPrice: Int
     public let imageUrl: String?
@@ -19,7 +19,7 @@ public struct ProductServerDTO: Sendable, Codable {
         active: Bool,
         expirationDate: Date?,
         quantityStock: Int,
-        unitType: String,
+        unitType: UnitType,
         unitCost: Int,
         unitPrice: Int,
         imageUrl: String?

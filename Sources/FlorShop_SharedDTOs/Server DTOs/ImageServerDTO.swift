@@ -1,6 +1,6 @@
 import Foundation
 
-public struct ImageURLServerDTO: Sendable, Codable {
+public struct ImageServerDTO: Sendable, Codable {
     public let imageData: Data
     
     public init(

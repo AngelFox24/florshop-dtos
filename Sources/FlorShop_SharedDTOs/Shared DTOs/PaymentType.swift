@@ -1,6 +1,6 @@
-public enum PaymentType: Sendable, Equatable, Codable {
-    case cash
-    case loan
+public enum PaymentType: String, Sendable, Equatable, Codable {
+    case cash = "Efectivo"
+    case loan = "Fiado"
     public var description: String {
         switch self {
         case .cash:

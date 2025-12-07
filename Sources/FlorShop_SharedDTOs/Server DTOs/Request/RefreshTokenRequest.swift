@@ -1,9 +1,12 @@
-public struct RefreshTokenRequest: Sendable,Codable {
-    public let refreshScopedToken: String
+public struct RefreshTokenRequest: Sendable, Codable {
+    public let refreshToken: String
+    public let identifier: TokenRefresableIdentifier
     
     public init(
-        refreshScopedToken: String
+        refreshToken: String,
+        identifier: TokenRefresableIdentifier
     ) {
-        self.refreshScopedToken = refreshScopedToken
+        self.refreshToken = refreshToken
+        self.identifier = identifier
     }
 }
