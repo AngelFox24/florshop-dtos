@@ -9,7 +9,7 @@ public struct CustomerServerDTO: Sendable, Codable {
     public let creditDays: Int
     public let isCreditLimitActive: Bool
     public let isDateLimitActive: Bool
-    public let isDateLimit: Bool
+    public let dateLimit: Date
     public var firstDatePurchaseWithCredit: Date?
     public let lastDatePurchase: Date
     public let phoneNumber: String?
@@ -25,7 +25,7 @@ public struct CustomerServerDTO: Sendable, Codable {
         creditDays: Int,
         isCreditLimitActive: Bool,
         isDateLimitActive: Bool,
-        isDateLimit: Bool,
+        dateLimit: Date,
         firstDatePurchaseWithCredit: Date? = nil,
         lastDatePurchase: Date,
         phoneNumber: String?,
@@ -40,7 +40,7 @@ public struct CustomerServerDTO: Sendable, Codable {
         self.creditDays = creditDays
         self.isCreditLimitActive = isCreditLimitActive
         self.isDateLimitActive = isDateLimitActive
-        self.isDateLimit = isDateLimit
+        self.dateLimit = dateLimit
         self.firstDatePurchaseWithCredit = firstDatePurchaseWithCredit
         self.lastDatePurchase = lastDatePurchase
         self.phoneNumber = phoneNumber

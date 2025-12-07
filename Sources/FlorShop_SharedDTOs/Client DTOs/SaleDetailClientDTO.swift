@@ -6,7 +6,7 @@ public struct SaleDetailClientDTO: Sendable, Codable {
     public let barCode: String
     public let quantitySold: Int
     public let subtotal: Int
-    public let unitType: String
+    public let unitType: UnitType
     public let unitCost: Int
     public let unitPrice: Int
     public let syncToken: Int64
@@ -21,7 +21,7 @@ public struct SaleDetailClientDTO: Sendable, Codable {
         barCode: String,
         quantitySold: Int,
         subtotal: Int,
-        unitType: String,
+        unitType: UnitType,
         unitCost: Int,
         unitPrice: Int,
         syncToken: Int64,

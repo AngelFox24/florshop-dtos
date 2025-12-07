@@ -3,7 +3,7 @@ import Foundation
 public struct CustomerClientDTO: Sendable, Codable {
     public let customerCic: String
     public let name: String
-    public let lastName: String
+    public let lastName: String?
     public let totalDebt: Int
     public let creditScore: Int
     public let creditDays: Int
@@ -14,7 +14,7 @@ public struct CustomerClientDTO: Sendable, Codable {
     public let dateLimit: Date
     public var firstDatePurchaseWithCredit: Date?
     public let lastDatePurchase: Date
-    public let phoneNumber: String
+    public let phoneNumber: String?
     public let creditLimit: Int
     public let syncToken: Int64
     public let companyCic: String
@@ -25,7 +25,7 @@ public struct CustomerClientDTO: Sendable, Codable {
     public init(
         customerCic: String,
         name: String,
-        lastName: String,
+        lastName: String?,
         totalDebt: Int,
         creditScore: Int,
         creditDays: Int,
@@ -36,7 +36,7 @@ public struct CustomerClientDTO: Sendable, Codable {
         dateLimit: Date,
         firstDatePurchaseWithCredit: Date? = nil,
         lastDatePurchase: Date,
-        phoneNumber: String,
+        phoneNumber: String?,
         creditLimit: Int,
         syncToken: Int64,
         companyCic: String,
