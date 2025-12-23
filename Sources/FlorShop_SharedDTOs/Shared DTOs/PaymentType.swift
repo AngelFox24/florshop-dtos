@@ -1,4 +1,4 @@
-public enum PaymentType: String, Sendable, Equatable, Codable {
+public enum PaymentType: String, Sendable, Equatable, Codable, CaseIterable {
     case cash = "Efectivo"
     case loan = "Fiado"
     public var description: String {

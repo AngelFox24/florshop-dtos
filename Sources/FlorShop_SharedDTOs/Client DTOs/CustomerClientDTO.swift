@@ -8,9 +8,7 @@ public struct CustomerClientDTO: Sendable, Codable {
     public let creditScore: Int
     public let creditDays: Int
     public let isCreditLimitActive: Bool
-    public let isCreditLimit: Bool
     public let isDateLimitActive: Bool
-    public let isDateLimit: Bool
     public let dateLimit: Date
     public var firstDatePurchaseWithCredit: Date?
     public let lastDatePurchase: Date
@@ -30,9 +28,7 @@ public struct CustomerClientDTO: Sendable, Codable {
         creditScore: Int,
         creditDays: Int,
         isCreditLimitActive: Bool,
-        isCreditLimit: Bool,
         isDateLimitActive: Bool,
-        isDateLimit: Bool,
         dateLimit: Date,
         firstDatePurchaseWithCredit: Date? = nil,
         lastDatePurchase: Date,
@@ -51,9 +47,7 @@ public struct CustomerClientDTO: Sendable, Codable {
         self.creditScore = creditScore
         self.creditDays = creditDays
         self.isCreditLimitActive = isCreditLimitActive
-        self.isCreditLimit = isCreditLimit
         self.isDateLimitActive = isDateLimitActive
-        self.isDateLimit = isDateLimit
         self.dateLimit = dateLimit
         self.firstDatePurchaseWithCredit = firstDatePurchaseWithCredit
         self.lastDatePurchase = lastDatePurchase

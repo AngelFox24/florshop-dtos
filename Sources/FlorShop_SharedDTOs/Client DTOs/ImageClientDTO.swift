@@ -7,3 +7,4 @@ public struct ImageClientDTO: Sendable, Codable {
         self.imageURL = imageURL
     }
 }
+

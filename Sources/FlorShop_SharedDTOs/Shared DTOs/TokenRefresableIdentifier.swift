@@ -1,7 +1,7 @@
 public enum TokenRefresableIdentifier: Sendable, Codable {
     case baseToken
     case scopedToken(subsidiaryCic: String)
-    case providerToken(provider: String)
+    case providerToken(provider: AuthProvider)
     
     public var identifier: String {
         switch self {
