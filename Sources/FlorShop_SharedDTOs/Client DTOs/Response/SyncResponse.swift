@@ -7,7 +7,6 @@ public struct SyncResponse: Sendable, Codable {
     public let products: [ProductClientDTO]
     public let productsSubsidiary: [ProductSubsidiaryClientDTO]
     public let sales: [SaleClientDTO]
-    public let salesDetail: [SaleDetailClientDTO]
     public let lastGlobalToken: Int64
     public let isGlobalUpToDate: Bool
     public let lastBranchToken: Int64
@@ -36,7 +35,6 @@ public struct SyncResponse: Sendable, Codable {
         self.products = products
         self.productsSubsidiary = productsSubsidiary
         self.sales = sales
-        self.salesDetail = salesDetail
         self.lastGlobalToken = lastGlobalToken
         self.isGlobalUpToDate = isGlobalUpToDate
         self.lastBranchToken = lastBranchToken
