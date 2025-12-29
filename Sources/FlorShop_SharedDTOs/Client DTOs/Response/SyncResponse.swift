@@ -21,7 +21,6 @@ public struct SyncResponse: Sendable, Codable {
         products: [ProductClientDTO],
         productsSubsidiary: [ProductSubsidiaryClientDTO],
         sales: [SaleClientDTO],
-        salesDetail: [SaleDetailClientDTO],
         lastGlobalToken: Int64,
         isGlobalUpToDate: Bool,
         lastBranchToken: Int64,
