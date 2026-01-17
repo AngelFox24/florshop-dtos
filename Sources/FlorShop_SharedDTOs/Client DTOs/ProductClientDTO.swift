@@ -5,7 +5,6 @@ public struct ProductClientDTO: Sendable, Codable {
     public let productName: String
     public let barCode: String
     public let unitType: UnitType
-    public let syncToken: Int64
     public let companyCic: String
     public let imageUrl: String?
     public let createdAt: Date
@@ -16,7 +15,6 @@ public struct ProductClientDTO: Sendable, Codable {
         productName: String,
         barCode: String,
         unitType: UnitType,
-        syncToken: Int64,
         companyCic: String,
         imageUrl: String?,
         createdAt: Date,
@@ -26,7 +24,6 @@ public struct ProductClientDTO: Sendable, Codable {
         self.productName = productName
         self.barCode = barCode
         self.unitType = unitType
-        self.syncToken = syncToken
         self.companyCic = companyCic
         self.imageUrl = imageUrl
         self.createdAt = createdAt

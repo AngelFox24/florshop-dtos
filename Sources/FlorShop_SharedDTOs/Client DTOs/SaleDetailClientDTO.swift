@@ -9,7 +9,6 @@ public struct SaleDetailClientDTO: Sendable, Codable {
     public let unitType: UnitType
     public let unitCost: Int
     public let unitPrice: Int
-    public let syncToken: Int64
     public let saleID: UUID
     public let imageUrl: String?
     public let createdAt: Date
@@ -24,7 +23,6 @@ public struct SaleDetailClientDTO: Sendable, Codable {
         unitType: UnitType,
         unitCost: Int,
         unitPrice: Int,
-        syncToken: Int64,
         saleID: UUID,
         imageUrl: String?,
         createdAt: Date,
@@ -38,7 +36,6 @@ public struct SaleDetailClientDTO: Sendable, Codable {
         self.unitType = unitType
         self.unitCost = unitCost
         self.unitPrice = unitPrice
-        self.syncToken = syncToken
         self.saleID = saleID
         self.imageUrl = imageUrl
         self.createdAt = createdAt

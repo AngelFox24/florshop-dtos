@@ -5,7 +5,6 @@ public struct SaleClientDTO: Sendable, Codable {
     public let paymentType: PaymentType
     public let saleDate: Date
     public let total: Int
-    public let syncToken: Int64
     public let subsidiaryCic: String
     public let customerCic: String?
     public let employeeCic: String
@@ -18,7 +17,6 @@ public struct SaleClientDTO: Sendable, Codable {
         paymentType: PaymentType,
         saleDate: Date,
         total: Int,
-        syncToken: Int64,
         subsidiaryCic: String,
         customerCic: String?,
         employeeCic: String,
@@ -30,7 +28,6 @@ public struct SaleClientDTO: Sendable, Codable {
         self.paymentType = paymentType
         self.saleDate = saleDate
         self.total = total
-        self.syncToken = syncToken
         self.subsidiaryCic = subsidiaryCic
         self.customerCic = customerCic
         self.employeeCic = employeeCic

@@ -14,7 +14,6 @@ public struct CustomerClientDTO: Sendable, Codable {
     public let lastDatePurchase: Date
     public let phoneNumber: String?
     public let creditLimit: Int
-    public let syncToken: Int64
     public let companyCic: String
     public let imageUrl: String?
     public let createdAt: Date
@@ -34,7 +33,6 @@ public struct CustomerClientDTO: Sendable, Codable {
         lastDatePurchase: Date,
         phoneNumber: String?,
         creditLimit: Int,
-        syncToken: Int64,
         companyCic: String,
         imageUrl: String?,
         createdAt: Date,
@@ -53,7 +51,6 @@ public struct CustomerClientDTO: Sendable, Codable {
         self.lastDatePurchase = lastDatePurchase
         self.phoneNumber = phoneNumber
         self.creditLimit = creditLimit
-        self.syncToken = syncToken
         self.companyCic = companyCic
         self.imageUrl = imageUrl
         self.createdAt = createdAt
