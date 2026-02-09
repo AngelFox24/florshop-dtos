@@ -11,6 +11,15 @@ public enum UnitType: String, Sendable, Codable {
         }
     }
     
+    public var shortDescription: String {
+        switch self {
+        case .unit:
+            return "u"
+        case .kilo:
+            return "Kg"
+        }
+    }
+    
     public static var allValues: [UnitType] {
         return [.unit, .kilo]
     }
