@@ -2,7 +2,7 @@ public struct PlanWebClientDTO: Sendable, Codable {//DTO para web para mostrar l
     public let planCic: String
     public let title: String
     public let description: String
-    public let price: Int
+    public let price: Money
     public let billingInterval: BillingInterval
     public let details: [String]
     
@@ -10,7 +10,7 @@ public struct PlanWebClientDTO: Sendable, Codable {//DTO para web para mostrar l
         planCic: String,
         title: String,
         description: String,
-        price: Int,
+        price: Money,
         billingInterval: BillingInterval,
         details: [String]
     ) {
