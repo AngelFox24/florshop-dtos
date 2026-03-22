@@ -1,21 +1,24 @@
 public struct PlanWebClientDTO: Sendable, Codable {//DTO para web para mostrar los planes
     public let planCic: String
     public let title: String
-    public let price: Double
-    public let time: String
+    public let description: String
+    public let price: Int
+    public let billingInterval: BillingInterval
     public let details: [String]
     
     public init(
         planCic: String,
         title: String,
-        price: Double,
-        time: String,
+        description: String,
+        price: Int,
+        billingInterval: BillingInterval,
         details: [String]
     ) {
         self.planCic = planCic
         self.title = title
+        self.description = description
         self.price = price
-        self.time = time
+        self.billingInterval = billingInterval
         self.details = details
     }
 }
