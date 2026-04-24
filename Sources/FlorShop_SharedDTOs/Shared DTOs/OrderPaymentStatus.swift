@@ -1,4 +1,4 @@
-public enum PaymentStatus: String, Sendable, Equatable, Codable {
+public enum OrderPaymentStatus: String, Sendable, Equatable, Codable {
     case pending
     case paid
     case failed
