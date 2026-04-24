@@ -4,13 +4,13 @@ public struct SuscriptionClientDTO: Sendable, Codable {//DTO para web para mostr
     public let suscriptionCic: String
     public let suscriptionExpireAt: Date
     public let planName: String
-    public let planPrice: Int
+    public let planPrice: Money
     
     public init(
         suscriptionCic: String,
         suscriptionExpireAt: Date,
         planName: String,
-        planPrice: Int
+        planPrice: Money
     ) {
         self.suscriptionCic = suscriptionCic
         self.suscriptionExpireAt = suscriptionExpireAt
